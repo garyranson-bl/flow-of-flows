@@ -40,7 +40,6 @@ def get_dbt_credentials(user_name: str, password: str):
 dbt = DbtShellTask(
     return_all=True,
     profile_name=DBT_PROJECT,
-    profiles_dir="/Users/anna/.dbt",
     environment="dev",
     overwrite_profiles=True,
     log_stdout=True,
